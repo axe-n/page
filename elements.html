@@ -50,6 +50,54 @@
 							<div class="inner">
 
 								<section>
+									<header>
+										<h4>⟹</h4>
+									</header>
+									<p>I am a third-year Physics major with a minor in Mathematics from one of the leading science institute, Indian Institute of Science Education and Research, Thiruvananthapuram (IISER TVM). </p>
+									<hr />
+
+									<!-- ===== Embedded CV (Inserted just above the "Scribbles" element) ===== -->
+									<section class="cv-embed" aria-labelledby="cv-heading">
+										<h4 id="cv-heading">Curriculum Vitae</h4>
+
+										<!-- Primary embed: iframe for modern browsers -->
+										<iframe
+											class="cv-frame"
+											src="assets/files/cu"
+											title="Curriculum vitae"
+											aria-label="Embedded curriculum vitae PDF"
+											frameborder="0"
+											allowfullscreen>
+										</iframe>
+
+										<!-- Fallback: object and download link -->
+										<object data="assets/ameen_ahsen_curriculum_vitae_.pdf" type="application/pdf" class="cv-frame" aria-hidden="true">
+											<p>
+												Your browser doesn't support embedded PDFs. You can
+												<a href="assets/ameen_ahsen_curriculum_vitae_.pdf" download="ameen_ahsen_curriculum_vitae_.pdf">download the CV here</a>.
+											</p>
+										</object>
+
+										<div class="cv-actions">
+											<!-- Open in new tab -->
+											<a class="button" href="assets/ameen_ahsen_curriculum_vitae_.pdf" target="_blank" rel="noopener">Open CV in new tab</a>
+
+											<!-- Force download (some browsers respect the download attribute) -->
+											<a class="button" href="assets/ameen_ahsen_curriculum_vitae_.pdf" download="ameen_ahsen_curriculum_vitae_.pdf">Download CV (PDF)</a>
+
+											<!-- Optional: link to a plain HTML CV if you prefer -->
+											<!-- <a class="button" href="/cv.html">View HTML CV</a> -->
+										</div>
+									</section>
+									<!-- ===== End embedded CV block ===== -->
+
+									<h5>Scribbles</h5>
+									<blockquote>It's ultimately mesmerizing how ideas make life prettier and at the same time terrible (2021)</blockquote>
+									<blockquote>Most of the innocent souls are unable to notice the minute turners in their life which actually affect their time-to-time events and becomes their fate (2021)</blockquote>
+									<blockquote>Do you know how the world runs for everyone? Well , it takes timed memories to witness that it just flows as of an  ultra-streamline current soothing yourself and absorbs, adsorps, dissolves and exorbs elements in you which in turn expressed, express and will express you in your flow (2022)</blockquote>
+
+								</section>
+								<section>
 <!-- 									<h4>Text</h4> -->
 <!-- 									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
@@ -388,3 +436,4 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre> -->
 
 	</body>
 </html>
+
