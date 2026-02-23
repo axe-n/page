@@ -1,92 +1,291 @@
 <!DOCTYPE HTML>
 <!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Spectral by HTML5 UP — Blog Post Template
+    "The Formation and Evolution of Stars"
+    Modified for Ameen Ahsen's webpage.
+    USAGE: Duplicate this file for each new blog post. Edit content inside
+           #main > .wrapper.style5 > .inner. Update the <header> title & subtitle,
+           and add a matching card in blog.html.
 -->
 <html>
 	<head>
-		<title>Generic - Spectral by HTML5 UP</title>
+		<title>The Formation and Evolution of Stars — Ameen Ahsen</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* ── Blog post specific styles ── */
+
+			/* Hero image just below the page header banner */
+			.post-hero {
+				width: 100%;
+				max-height: 420px;
+				object-fit: cover;
+				display: block;
+				margin-bottom: 2.5em;
+				border-radius: 3px;
+				filter: brightness(0.88);
+			}
+
+			/* Thin meta line: author · date · read time */
+			.post-meta {
+				font-size: 0.78em;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				opacity: 0.55;
+				margin-bottom: 2em;
+				border-left: 3px solid rgba(255,255,255,0.25);
+				padding-left: 0.8em;
+			}
+
+			/* Category tags above the title */
+			.post-tags {
+				margin-bottom: 0.5em;
+			}
+
+			.post-tag {
+				display: inline-block;
+				font-size: 0.65em;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				border: 1px solid rgba(255,255,255,0.3);
+				border-radius: 2px;
+				padding: 2px 8px;
+				margin-right: 6px;
+				opacity: 0.7;
+			}
+
+			/* Section headings inside the article */
+			.inner h3 {
+				margin-top: 2em;
+			}
+
+			/* Pull-quote / blockquote style for interesting lines */
+			.post-pullquote {
+				border-left: 3px solid rgba(255,255,255,0.35);
+				padding: 0.6em 1.2em;
+				margin: 2em 0;
+				font-style: italic;
+				opacity: 0.75;
+				font-size: 1.05em;
+				line-height: 1.7;
+			}
+
+			/* Back-to-blog navigation link at top and bottom */
+			.back-link {
+				display: inline-block;
+				font-size: 0.78em;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				margin-bottom: 2em;
+				opacity: 0.6;
+				text-decoration: none;
+				transition: opacity 0.2s;
+			}
+
+			.back-link:hover { opacity: 1; }
+
+			/* Related posts section at the bottom */
+			.related-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+				gap: 1.5em;
+				margin-top: 1.5em;
+			}
+
+			.related-card {
+				background: rgba(255,255,255,0.03);
+				border: 1px solid rgba(255,255,255,0.08);
+				border-radius: 3px;
+				overflow: hidden;
+				transition: transform 0.2s, border-color 0.2s;
+				text-decoration: none;
+				display: block;
+				color: inherit;
+			}
+
+			.related-card:hover {
+				transform: translateY(-3px);
+				border-color: rgba(255,255,255,0.2);
+			}
+
+			.related-card img {
+				width: 100%;
+				aspect-ratio: 16/9;
+				object-fit: cover;
+				display: block;
+				filter: brightness(0.75);
+			}
+
+			.related-card-body {
+				padding: 1em 1.1em 1.2em;
+				font-size: 0.88em;
+				line-height: 1.5;
+				font-weight: 600;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+		<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Spectral</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<article id="main">
-						<header>
-							<h2>Generic Page</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
-
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
-								<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-								<hr />
-
-								<h4>Feugiat aliquam</h4>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
-
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>
-
+			<!-- ── HEADER & NAV ──
+			     Copy this exact <header> block into ALL your other HTML files
+			     (index.html, elements.html) to activate the Blog link site-wide.
+			-->
+			<header id="header">
+				<h1><a href="index.html">Ameen Ahsen</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="elements.html">About</a></li>
+									<li><a href="generic.html">Generic</a></li>
+									<li><a href="blog.html">Blog</a></li><!-- ADD THIS LINE TO ALL OTHER PAGES TOO -->
+								</ul>
 							</div>
-						</section>
-					</article>
+						</li>
+					</ul>
+				</nav>
+			</header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+			<!-- ── ARTICLE HERO BANNER ── -->
+			<article id="main">
+				<header>
+					<!-- Edit these two lines for each new post -->
+					<h2>The Formation and Evolution of Stars</h2>
+					<p>A Celestial Journey through stellar birth, life, and death</p>
+				</header>
 
-			</div>
+				<!-- ── ARTICLE BODY ── -->
+				<section class="wrapper style5">
+					<div class="inner">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+						<!-- Back navigation -->
+						<a href="blog.html" class="back-link">← Back to Blog</a>
+
+						<!-- Tags + meta -->
+						<div class="post-tags">
+							<span class="post-tag">Astronomy</span>
+							<span class="post-tag">Astrophysics</span>
+							<span class="post-tag">Star Formation</span>
+						</div>
+						<p class="post-meta">Jun 13, 2023 &nbsp;·&nbsp; 2 min read &nbsp;·&nbsp; Ameen Ahsen</p>
+
+						<!-- Hero image for this post -->
+						<img
+							class="post-hero"
+							src="https://static.wixstatic.com/media/37918afd5cd7785e323e2c81b9a501d6.jpg/v1/fill/w_980,h_613,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/37918afd5cd7785e323e2c81b9a501d6.jpg"
+							alt="Stellar nursery — a vast cloud of gas and dust where new stars are born"
+						/>
+
+						<!-- ── ARTICLE CONTENT ── -->
+						<!-- To write a new post: replace everything between here and the <hr /> below -->
+
+						<p>Stars, those captivating beacons of light, hold within them a fascinating tale of birth,
+						life, and eventual demise. Here we delve into the awe-inspiring process of star formation
+						and evolution — an astronomical adventure like no other.</p>
+
+						<h3>Birth of a Star: A Stellar Nursery</h3>
+						<p>Deep within vast interstellar clouds of gas and dust, the magic of star formation begins.
+						These colossal stellar nurseries, often called <em>molecular clouds</em>, are the birthplaces
+						of new stars. Gravity — the cosmic sculptor — pulls together gas and dust particles, causing
+						them to collapse under their own weight. As the cloud contracts, it fragments into smaller
+						clumps, forming dense cores that become the stellar embryos of future stars.</p>
+
+						<h3>Protostar: The Infant Luminary</h3>
+						<p>From the dense core emerges a <em>protostar</em> — a young celestial object in its
+						infancy. This stellar embryo is enveloped in a cocoon of gas and dust, obscuring its
+						brilliance from our view. As the protostar continues to gather matter, it heats up, igniting
+						the nuclear fusion process at its core. With each fusion reaction, the protostar grows
+						stronger, gradually shedding its cocoon and revealing its luminous nature to the universe.</p>
+
+						<blockquote class="post-pullquote">
+							"The protostar's journey from obscurity to brilliance mirrors something deeply human —
+							the idea that the most luminous futures can begin in the most hidden of places."
+						</blockquote>
+
+						<h3>Main Sequence: The Radiant Prime of Life</h3>
+						<p>The <em>main sequence</em> is the phase where the vast majority of stars spend most of
+						their lives. As a star settles into this stable state, a delicate balance is struck between
+						the inward pull of gravity and the outward pressure of nuclear fusion occurring in its core.
+						This equilibrium allows stars to shine brightly and steadfastly for billions of years,
+						radiating energy into the cosmos.</p>
+
+						<h3>Stellar Evolution: Diversity in the Celestial Family</h3>
+						<p>Just as no two humans are alike, stars come in a dazzling array of sizes, colours, and
+						lifetimes. Stellar evolution is a grand showcase of this cosmic diversity. Stars range from
+						dim, cool red dwarfs to massive, scorching blue giants. Their lifespans vary from millions
+						to billions of years — some burning out quickly in spectacular supernova explosions, others
+						quietly fading away.</p>
+
+						<h3>The Fate of Stars: Going Out with a Bang or a Whimper</h3>
+						<p>In the grand cosmic tapestry, stars too have their final acts. The outcome depends almost
+						entirely on initial mass. Lower-mass stars like our Sun undergo a graceful transformation —
+						shedding their outer layers to form colourful planetary nebulae, while the remaining core
+						collapses into a <em>white dwarf</em>: an eternal ember of their former brilliance.</p>
+
+						<p>Massive stars, on the other hand, put on a dazzling final show. In a cataclysmic display,
+						these giants explode as a <em>supernova</em>, scattering heavy elements forged in their cores
+						across the cosmos. Some supernovae give birth to <em>neutron stars</em> or <em>black holes</em>
+						— mysterious remnants that continue to captivate physicists and astronomers alike.</p>
+
+						<!-- ── END ARTICLE CONTENT ── -->
+						<hr />
+
+						<!-- Related posts section -->
+						<h4>More Posts</h4>
+						<div class="related-grid">
+
+							<a href="#" class="related-card">
+								<img src="images/pic05.jpg" alt="Related post" />
+								<div class="related-card-body">Coming soon: [Next post title]</div>
+							</a>
+
+							<a href="#" class="related-card">
+								<img src="images/pic06.jpg" alt="Related post" />
+								<div class="related-card-body">Coming soon: [Next post title]</div>
+							</a>
+
+						</div>
+
+						<br />
+						<a href="blog.html" class="back-link">← Back to all posts</a>
+
+					</div>
+				</section>
+			</article>
+
+			<!-- ── FOOTER ── -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Ameen Ahsen</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		</div><!-- /page-wrapper -->
+
+		<!-- ── SCRIPTS ── -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
