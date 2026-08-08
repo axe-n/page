@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<!--
+    Spectral by HTML5 UP — Blog Index Page
+    Modified for Ameen Ahsen's webpage
+-->
+<html>
+	<head>
+		<title>Blog — Ameen Ahsen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* ── Blog-specific styles, scoped so they don't affect other pages ── */
+
+			/* Grid of blog cards */
+			.blog-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				gap: 2em;
+				margin-top: 2em;
+			}
+
+			/* Individual card */
+			.blog-card {
+				background: rgba(255,255,255,0.03);
+				border: 1px solid rgba(255,255,255,0.08);
+				border-radius: 4px;
+				overflow: hidden;
+				transition: transform 0.25s ease, border-color 0.25s ease;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.blog-card:hover {
+				transform: translateY(-4px);
+				border-color: rgba(255,255,255,0.2);
+			}
+
+			.blog-card img {
+				width: 100%;
+				aspect-ratio: 16 / 9;
+				object-fit: cover;
+				display: block;
+				filter: brightness(0.82);
+				transition: filter 0.3s ease;
+			}
+
+			.blog-card:hover img {
+				filter: brightness(1);
+			}
+
+			.blog-card-body {
+				padding: 1.5em 1.6em 1.8em;
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.blog-card-meta {
+				font-size: 0.72em;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				opacity: 0.55;
+				margin-bottom: 0.6em;
+			}
+
+			.blog-card-title {
+				font-size: 1.1em;
+				font-weight: 600;
+				line-height: 1.4;
+				margin-bottom: 0.75em;
+				color: #ffffff;
+			}
+
+			.blog-card-excerpt {
+				font-size: 0.9em;
+				line-height: 1.65;
+				opacity: 0.7;
+				flex: 1;
+				margin-bottom: 1.2em;
+			}
+
+			.blog-card-link {
+				font-size: 0.78em;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				border-bottom: 1px solid rgba(255,255,255,0.3);
+				padding-bottom: 2px;
+				width: fit-content;
+				transition: border-color 0.2s;
+				text-decoration: none;
+			}
+
+			.blog-card-link:hover {
+				border-color: white;
+			}
+
+			/* Tag/category badge */
+			.blog-tag {
+				display: inline-block;
+				font-size: 0.65em;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				border: 1px solid rgba(255,255,255,0.25);
+				border-radius: 2px;
+				padding: 2px 8px;
+				margin-right: 6px;
+				margin-bottom: 0.8em;
+				opacity: 0.7;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+		<div id="page-wrapper">
+
+			<!-- ── HEADER & NAV ── -->
+			<!-- NOTE: Also add <li><a href="blog.html">Blog</a></li> to index.html,
+			     me.html, and generic.html menus for full site-wide connection. -->
+			<header id="header">
+				<h1><a href="index.html">Ameen Ahsen</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="me.html">About</a></li>
+									<li><a href="generic.html">Generic</a></li>
+									<li><a href="blog.html">Blog</a></li><!-- NEW LINK -->
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- ── PAGE HERO ── -->
+			<article id="main">
+				<header>
+					<h2>Blog</h2>
+					<p>Thoughts on physics, space, mathematics &amp; beyond</p>
+				</header>
+
+				<!-- ── BLOG LISTING SECTION ── -->
+				<section class="wrapper style5">
+					<div class="inner">
+
+						<h3>Latest Posts</h3>
+						<p>A growing collection of articles on topics and things I find fascinating. New posts added as ideas take shape.</p>
+
+						<hr />
+
+						<!-- ── BLOG CARDS GRID ── -->
+						<div class="blog-grid">
+
+							<!-- Card 1: Star Formation (links to generic.html which is now the post) -->
+							<!-- ===== Blog Card 1 ===== -->
+
+							<article class="blog-card">
+								<img
+									src="images/pic04.jpg"
+									alt="Displacement vs Distance"
+								/>
+
+							```
+							<div class="blog-card-body">
+
+								<div>
+									<span class="blog-tag">Physics</span>
+									<span class="blog-tag">Thoughts</span>
+								</div>
+
+								<p class="blog-card-meta">Jul 31, 2026 &nbsp;·&nbsp; 3 min read</p>
+
+								<h4 class="blog-card-title">
+									Displacement vs. Distance (or: My Brain Runs Dijkstra's on a Loop)
+								</h4>
+
+								<p class="blog-card-excerpt">
+									Physics teaches you distance is the whole scribbled path — every zigzag,
+									backtrack, detour you took to get somewhere. Displacement doesn't care
+									about your mess. It's the straight, cold vector from where you started
+									to where you landed. No memory of the noise in between.
+								</p>
+
+								<a href="generic.html" class="blog-card-link">Read Article →</a>
+							</div>
+							```
+
+							</article>
+
+							<!-- ===== Blog Card 2 ===== -->
+
+							<article class="blog-card">
+								<img
+									src="images/pic05.jpg"
+									alt="Google Search as a Cognitive Tool"
+								/>
+
+							```
+							<div class="blog-card-body">
+
+								<div>
+									<span class="blog-tag">Technology</span>
+									<span class="blog-tag">Cognition</span>
+								</div>
+
+								<p class="blog-card-meta">Jul 31, 2026 &nbsp;·&nbsp; 3 min read</p>
+
+								<h4 class="blog-card-title">
+									Google Search: The Most Slept-On Cognitive Tool You Own
+								</h4>
+
+								<p class="blog-card-excerpt">
+									We treat search like elevator music — always on, rarely appreciated.
+									But strip away the familiarity and it's actually kind of unreal: any
+									half-formed thought, typed badly, missing context, gets pattern-matched
+									against the accumulated documentation of human curiosity in under a second.
+								</p>
+
+								<a href="generic.html" class="blog-card-link">Read Article →</a>
+							</div>
+							```
+
+							</article>
+
+
+							<!-- Card 2: Placeholder — duplicate/delete when you add a real post -->
+							<article class="blog-card">
+								<img src="images/pic05.jpg" alt="Coming soon" />
+								<div class="blog-card-body">
+									<div>
+										<span class="blog-tag">Mathematics</span>
+									</div>
+									<p class="blog-card-meta">Coming soon &nbsp;·&nbsp; — min read</p>
+									<h4 class="blog-card-title">
+										[Next post title goes here]
+									</h4>
+									<p class="blog-card-excerpt">
+										A placeholder card. Replace this entire &lt;article class="blog-card"&gt; block
+										with your next article's details and link.
+									</p>
+									<a href="#" class="blog-card-link">Coming soon</a>
+								</div>
+							</article>
+
+							<!-- Card 3: Placeholder -->
+							<article class="blog-card">
+								<img src="images/pic06.jpg" alt="Coming soon" />
+								<div class="blog-card-body">
+									<div>
+										<span class="blog-tag">Physics</span>
+									</div>
+									<p class="blog-card-meta">Coming soon &nbsp;·&nbsp; — min read</p>
+									<h4 class="blog-card-title">
+										[Next post title goes here]
+									</h4>
+									<p class="blog-card-excerpt">
+										Another placeholder. Each new blog post you write gets its own HTML file,
+										and a new card added here pointing to it.
+									</p>
+									<a href="#" class="blog-card-link">Coming soon</a>
+								</div>
+							</article>
+
+						</div><!-- /blog-grid -->
+
+						<hr />
+
+						<!-- HOW TO ADD NEW POSTS — visible only in source, remove before publishing if desired -->
+						<!--
+						  HOW TO ADD A NEW BLOG POST:
+						  1. Duplicate generic.html → rename it (e.g. post-quantum.html)
+						  2. Edit the content inside that new file with your article
+						  3. Copy one of the <article class="blog-card"> blocks above
+						  4. Update: image src, tags, date, title, excerpt, and href in blog-card-link
+						  5. Done. The card will appear in this grid automatically.
+						-->
+
+					</div>
+				</section>
+			</article>
+
+			<!-- ── FOOTER ── -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Ameen Ahsen</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		</div><!-- /page-wrapper -->
+
+		<!-- ── SCRIPTS (same as all other pages) ── -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
